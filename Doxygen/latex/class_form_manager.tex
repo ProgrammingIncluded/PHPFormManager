@@ -1,0 +1,152 @@
+\hypertarget{class_form_manager}{\section{Form\-Manager Class Reference}
+\label{class_form_manager}\index{Form\-Manager@{Form\-Manager}}
+}
+
+
+Class for managing multiple forms.  
+
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_form_manager_a095c5d389db211932136b53f25f39685}{\hyperlink{class_form_manager_a095c5d389db211932136b53f25f39685}{\-\_\-\-\_\-construct} ()}\label{class_form_manager_a095c5d389db211932136b53f25f39685}
+
+\begin{DoxyCompactList}\small\item\em Default constructor for class. \end{DoxyCompactList}\item 
+\hypertarget{class_form_manager_a421831a265621325e1fdd19aace0c758}{\hyperlink{class_form_manager_a421831a265621325e1fdd19aace0c758}{\-\_\-\-\_\-destruct} ()}\label{class_form_manager_a421831a265621325e1fdd19aace0c758}
+
+\begin{DoxyCompactList}\small\item\em Default de-\/constructor for class. \end{DoxyCompactList}\item 
+\hyperlink{class_form_manager_a50b1ff6a4b3cfefd80263845f9e27437}{add\-New\-Form} (\$form\-Name, \$data\-User, \$data\-Base, \$table)
+\begin{DoxyCompactList}\small\item\em Add new \hyperlink{class_form}{Form} to manager. \end{DoxyCompactList}\item 
+\hyperlink{class_form_manager_aef87575c4539e539e6607476d914812e}{add\-Form} (\$form\-Name, \$form)
+\begin{DoxyCompactList}\small\item\em Add existing \hyperlink{class_form}{Form} to manager. \end{DoxyCompactList}\item 
+\hypertarget{class_form_manager_adfc32aa39bda3ade893abc1088e4d80c}{\hyperlink{class_form_manager_adfc32aa39bda3ade893abc1088e4d80c}{get\-Form} (\$form\-Name)}\label{class_form_manager_adfc32aa39bda3ade893abc1088e4d80c}
+
+\begin{DoxyCompactList}\small\item\em Get the \hyperlink{class_form}{Form} with the associated unique I\-D. \end{DoxyCompactList}\item 
+\hyperlink{class_form_manager_a7e78d524604f6922a0a8a580fc1ee581}{set\-Form\-W\-Func} (\$form\-Name, \$func)
+\begin{DoxyCompactList}\small\item\em Set attributes of \hyperlink{class_form}{Form} with function as second variable. \end{DoxyCompactList}\item 
+\hyperlink{class_form_manager_af061bdc8e3df0a4efc0d3a56a78f1f2d}{delete\-Form} (\$form\-Name)
+\begin{DoxyCompactList}\small\item\em Delete \hyperlink{class_form}{Form} based on unique name given to Form\-Manger. \end{DoxyCompactList}\item 
+\hyperlink{class_form_manager_ab62c8f00f2c8a2f290ad7fb4dfd9dc4b}{set\-Values} (\$form\-Name, \$array)
+\begin{DoxyCompactList}\small\item\em Set values of \hyperlink{class_form}{Form} given a form name and an array. \end{DoxyCompactList}\item 
+\hyperlink{class_form_manager_a321cea2eb6ffee3583138f24e27b6cd8}{get\-Display} (\$form\-Name)
+\begin{DoxyCompactList}\small\item\em Get display of the \hyperlink{class_form}{Form} given an unique form identifier. \end{DoxyCompactList}\item 
+\hypertarget{class_form_manager_a5f810d1803120942c114e4b5d9cd093d}{\hyperlink{class_form_manager_a5f810d1803120942c114e4b5d9cd093d}{check\-Form\-Id} (\$form\-Name)}\label{class_form_manager_a5f810d1803120942c114e4b5d9cd093d}
+
+\begin{DoxyCompactList}\small\item\em Check if id is used in \hyperlink{class_form_manager}{Form\-Manager}, returns true if used. \end{DoxyCompactList}\item 
+\hyperlink{class_form_manager_a522aad29e6a35bb37a5af7e97588c70e}{retrieve\-Form} (\$form\-Name)
+\begin{DoxyCompactList}\small\item\em Retrieve the \hyperlink{class_form}{Form} given an unique form identifier. \end{DoxyCompactList}\item 
+\hyperlink{class_form_manager_aac5abede82f76aac05ab405be136871d}{submit\-Form} (\$form\-Name)
+\begin{DoxyCompactList}\small\item\em Submit the \hyperlink{class_form}{Form} given an unique form identifier. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_form_manager_a1a4fda4c28a9ee5f91102c023b9501f4}{\hyperlink{class_form_manager_a1a4fda4c28a9ee5f91102c023b9501f4}{\$form}}\label{class_form_manager_a1a4fda4c28a9ee5f91102c023b9501f4}
+
+\begin{DoxyCompactList}\small\item\em Array to hold \hyperlink{class_form}{Form(s)}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Class for managing multiple forms. 
+
+Each form has a specific key associated with it. Essentially a custom container to help manage multiple forms. 
+
+\subsection{Member Function Documentation}
+\hypertarget{class_form_manager_aef87575c4539e539e6607476d914812e}{\index{Form\-Manager@{Form\-Manager}!add\-Form@{add\-Form}}
+\index{add\-Form@{add\-Form}!FormManager@{Form\-Manager}}
+\subsubsection[{add\-Form}]{\setlength{\rightskip}{0pt plus 5cm}add\-Form (
+\begin{DoxyParamCaption}
+\item[{}]{\$form\-Name, }
+\item[{}]{\$form}
+\end{DoxyParamCaption}
+)}}\label{class_form_manager_aef87575c4539e539e6607476d914812e}
+
+
+Add existing \hyperlink{class_form}{Form} to manager. 
+
+Add a \hyperlink{class_form}{Form} directly into the manager. \hypertarget{class_form_manager_a50b1ff6a4b3cfefd80263845f9e27437}{\index{Form\-Manager@{Form\-Manager}!add\-New\-Form@{add\-New\-Form}}
+\index{add\-New\-Form@{add\-New\-Form}!FormManager@{Form\-Manager}}
+\subsubsection[{add\-New\-Form}]{\setlength{\rightskip}{0pt plus 5cm}add\-New\-Form (
+\begin{DoxyParamCaption}
+\item[{}]{\$form\-Name, }
+\item[{}]{\$data\-User, }
+\item[{}]{\$data\-Base, }
+\item[{}]{\$table}
+\end{DoxyParamCaption}
+)}}\label{class_form_manager_a50b1ff6a4b3cfefd80263845f9e27437}
+
+
+Add new \hyperlink{class_form}{Form} to manager. 
+
+Requires unique name (will need to implement check), S\-Q\-L user, S\-Q\-L database, and S\-Q\-L table. Refer to \hyperlink{class_form_af40041b2b1c6558837ba8596fe8e0552}{Form\-::\-\_\-\-\_\-construct}(\$datauser, \$database, \$table). \hypertarget{class_form_manager_af061bdc8e3df0a4efc0d3a56a78f1f2d}{\index{Form\-Manager@{Form\-Manager}!delete\-Form@{delete\-Form}}
+\index{delete\-Form@{delete\-Form}!FormManager@{Form\-Manager}}
+\subsubsection[{delete\-Form}]{\setlength{\rightskip}{0pt plus 5cm}delete\-Form (
+\begin{DoxyParamCaption}
+\item[{}]{\$form\-Name}
+\end{DoxyParamCaption}
+)}}\label{class_form_manager_af061bdc8e3df0a4efc0d3a56a78f1f2d}
+
+
+Delete \hyperlink{class_form}{Form} based on unique name given to Form\-Manger. 
+
+This does not currently use \hyperlink{class_form}{Form} name variable. May change, however, not very likely. This is because, \hyperlink{class_form}{Form} is managed by \hyperlink{class_form_manager}{Form\-Manager}, as such there could be unique, short cut, names. \hypertarget{class_form_manager_a321cea2eb6ffee3583138f24e27b6cd8}{\index{Form\-Manager@{Form\-Manager}!get\-Display@{get\-Display}}
+\index{get\-Display@{get\-Display}!FormManager@{Form\-Manager}}
+\subsubsection[{get\-Display}]{\setlength{\rightskip}{0pt plus 5cm}get\-Display (
+\begin{DoxyParamCaption}
+\item[{}]{\$form\-Name}
+\end{DoxyParamCaption}
+)}}\label{class_form_manager_a321cea2eb6ffee3583138f24e27b6cd8}
+
+
+Get display of the \hyperlink{class_form}{Form} given an unique form identifier. 
+
+Refer to \hyperlink{class_form_a6aed11d79758a2d06062c8cd94bab221}{Form\-::get\-Form()} \hypertarget{class_form_manager_a522aad29e6a35bb37a5af7e97588c70e}{\index{Form\-Manager@{Form\-Manager}!retrieve\-Form@{retrieve\-Form}}
+\index{retrieve\-Form@{retrieve\-Form}!FormManager@{Form\-Manager}}
+\subsubsection[{retrieve\-Form}]{\setlength{\rightskip}{0pt plus 5cm}retrieve\-Form (
+\begin{DoxyParamCaption}
+\item[{}]{\$form\-Name}
+\end{DoxyParamCaption}
+)}}\label{class_form_manager_a522aad29e6a35bb37a5af7e97588c70e}
+
+
+Retrieve the \hyperlink{class_form}{Form} given an unique form identifier. 
+
+\hyperlink{class_form}{Form} retrieve is based on the associated html names of the \hyperlink{class_fields}{Fields} in the \hyperlink{class_form}{Form}. The function will then set values to the associated Forms. Uses \hyperlink{class_form_util_af02d029c44caef3ef026099eb6096646}{Form\-Util\-::retrieve\-Using\-Form\-Values}(\$form). \hypertarget{class_form_manager_a7e78d524604f6922a0a8a580fc1ee581}{\index{Form\-Manager@{Form\-Manager}!set\-Form\-W\-Func@{set\-Form\-W\-Func}}
+\index{set\-Form\-W\-Func@{set\-Form\-W\-Func}!FormManager@{Form\-Manager}}
+\subsubsection[{set\-Form\-W\-Func}]{\setlength{\rightskip}{0pt plus 5cm}set\-Form\-W\-Func (
+\begin{DoxyParamCaption}
+\item[{}]{\$form\-Name, }
+\item[{}]{\$func}
+\end{DoxyParamCaption}
+)}}\label{class_form_manager_a7e78d524604f6922a0a8a580fc1ee581}
+
+
+Set attributes of \hyperlink{class_form}{Form} with function as second variable. 
+
+\$func or given function must only have \hyperlink{class_form}{Form} as the parameter. \hypertarget{class_form_manager_ab62c8f00f2c8a2f290ad7fb4dfd9dc4b}{\index{Form\-Manager@{Form\-Manager}!set\-Values@{set\-Values}}
+\index{set\-Values@{set\-Values}!FormManager@{Form\-Manager}}
+\subsubsection[{set\-Values}]{\setlength{\rightskip}{0pt plus 5cm}set\-Values (
+\begin{DoxyParamCaption}
+\item[{}]{\$form\-Name, }
+\item[{}]{\$array}
+\end{DoxyParamCaption}
+)}}\label{class_form_manager_ab62c8f00f2c8a2f290ad7fb4dfd9dc4b}
+
+
+Set values of \hyperlink{class_form}{Form} given a form name and an array. 
+
+Refer to \hyperlink{class_form_a0fc192b82e0cc5ddfeb120046d3fff36}{Form\-::set\-Array\-Value}(\$post) \hypertarget{class_form_manager_aac5abede82f76aac05ab405be136871d}{\index{Form\-Manager@{Form\-Manager}!submit\-Form@{submit\-Form}}
+\index{submit\-Form@{submit\-Form}!FormManager@{Form\-Manager}}
+\subsubsection[{submit\-Form}]{\setlength{\rightskip}{0pt plus 5cm}submit\-Form (
+\begin{DoxyParamCaption}
+\item[{}]{\$form\-Name}
+\end{DoxyParamCaption}
+)}}\label{class_form_manager_aac5abede82f76aac05ab405be136871d}
+
+
+Submit the \hyperlink{class_form}{Form} given an unique form identifier. 
+
+\hyperlink{class_form}{Form} submit is based on the associated html names of the \hyperlink{class_fields}{Fields} in the \hyperlink{class_form}{Form}. Uses \hyperlink{class_form_util_ac7c187cc47890d73a4d33ab38400f3e9}{Form\-Util\-::submit\-Using\-Form\-Values}(\$form). 
+
+The documentation for this class was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+Form\-Manager.\-php\end{DoxyCompactItemize}

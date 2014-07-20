@@ -1,0 +1,62 @@
+\hypertarget{class_text_input}{\section{Text\-Input Class Reference}
+\label{class_text_input}\index{Text\-Input@{Text\-Input}}
+}
+
+
+Text input bar field for \hyperlink{class_form}{Form}.  
+
+
+Inheritance diagram for Text\-Input\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{class_text_input}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_text_input_a14814e04b348120748912692645f3a75}{\hyperlink{class_text_input_a14814e04b348120748912692645f3a75}{get\-Contents} ()}\label{class_text_input_a14814e04b348120748912692645f3a75}
+
+\begin{DoxyCompactList}\small\item\em Get the value of the field as html format. Used by form. \end{DoxyCompactList}\item 
+\hypertarget{class_text_input_a342df365ed03aee6a74989a388dff8c9}{\hyperlink{class_text_input_a342df365ed03aee6a74989a388dff8c9}{set\-Size} (\$s)}\label{class_text_input_a342df365ed03aee6a74989a388dff8c9}
+
+\begin{DoxyCompactList}\small\item\em Set size or length of the input bar. Note\-: Height is not affected. \end{DoxyCompactList}\item 
+\hyperlink{class_text_input_aef96c9ec2037beea335cd47fe7978bcc}{set\-Disabled} (\$d)
+\begin{DoxyCompactList}\small\item\em Set if the input bar is locked. \end{DoxyCompactList}\item 
+\hypertarget{class_text_input_acb30698aae42539e2b9ea3f6d172ce46}{\hyperlink{class_text_input_acb30698aae42539e2b9ea3f6d172ce46}{get\-Disabled} ()}\label{class_text_input_acb30698aae42539e2b9ea3f6d172ce46}
+
+\begin{DoxyCompactList}\small\item\em Get boolean on if the input bar is locked. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_text_input_af594986e4618a8d6a5d7566617f583c6}{{\bfseries \$size} = 10}\label{class_text_input_af594986e4618a8d6a5d7566617f583c6}
+
+\item 
+\hypertarget{class_text_input_a6c108f5b26242d862f6e51869fbfd271}{{\bfseries \$disabled}}\label{class_text_input_a6c108f5b26242d862f6e51869fbfd271}
+
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+Text input bar field for \hyperlink{class_form}{Form}. 
+
+The most used class for field. It is simple in code as it only manages one data value. Refer to \hyperlink{class_text_box}{Text\-Box} for words longer than 5. (Note\-: May be exceptions) 
+
+\subsection{Member Function Documentation}
+\hypertarget{class_text_input_aef96c9ec2037beea335cd47fe7978bcc}{\index{Text\-Input@{Text\-Input}!set\-Disabled@{set\-Disabled}}
+\index{set\-Disabled@{set\-Disabled}!TextInput@{Text\-Input}}
+\subsubsection[{set\-Disabled}]{\setlength{\rightskip}{0pt plus 5cm}set\-Disabled (
+\begin{DoxyParamCaption}
+\item[{}]{\$d}
+\end{DoxyParamCaption}
+)}}\label{class_text_input_aef96c9ec2037beea335cd47fe7978bcc}
+
+
+Set if the input bar is locked. 
+
+Please note that when the input is locked, \$\-\_\-\-P\-O\-S\-T will not contain this variables. This means that \hyperlink{class_form}{Form} will not being able to read this info when passing \$\-\_\-\-P\-O\-S\-T directly to \hyperlink{class_form_a0fc192b82e0cc5ddfeb120046d3fff36}{Form\-::set\-Array\-Value}(\$post). As such, if you want to modify the value displayed in lock form, \hyperlink{class_fields_a013b668cd0771a560d9f8dd061badb82}{Fields\-::set\-Overide\-Def}(\$overide) may be used. 
+
+The documentation for this class was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+Form.\-php\end{DoxyCompactItemize}

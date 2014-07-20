@@ -1,0 +1,94 @@
+\hypertarget{class_date_list}{\section{Date\-List Class Reference}
+\label{class_date_list}\index{Date\-List@{Date\-List}}
+}
+
+
+A special drop list for dates to be used in \hyperlink{class_form}{Form}.  
+
+
+Inheritance diagram for Date\-List\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_date_list}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_date_list_ac610fc08cbb0781b26136636de129bc0}{\-\_\-\-\_\-construct} (\$nm)
+\begin{DoxyCompactList}\small\item\em Constructor for class. \end{DoxyCompactList}\item 
+\hypertarget{class_date_list_a421831a265621325e1fdd19aace0c758}{\hyperlink{class_date_list_a421831a265621325e1fdd19aace0c758}{\-\_\-\-\_\-destruct} ()}\label{class_date_list_a421831a265621325e1fdd19aace0c758}
+
+\begin{DoxyCompactList}\small\item\em Default de-\/constructor for class. \end{DoxyCompactList}\item 
+\hypertarget{class_date_list_a6f75ffe7d98c9e375394d63f8d379b2d}{{\bfseries set\-Class} (\$nm)}\label{class_date_list_a6f75ffe7d98c9e375394d63f8d379b2d}
+
+\item 
+\hypertarget{class_date_list_a4e25c00802ca9e9afb52a9177014fea7}{{\bfseries set\-Div\-Class} (\$nm)}\label{class_date_list_a4e25c00802ca9e9afb52a9177014fea7}
+
+\item 
+\hypertarget{class_date_list_a24d89b0ad05ea2e33626b1fc8ed59bc3}{{\bfseries get\-Date} ()}\label{class_date_list_a24d89b0ad05ea2e33626b1fc8ed59bc3}
+
+\item 
+\hypertarget{class_date_list_adc30a2a4d3e48cb6aee21562afbc4022}{{\bfseries get\-Default} ()}\label{class_date_list_adc30a2a4d3e48cb6aee21562afbc4022}
+
+\item 
+\hyperlink{class_date_list_aaf2bb7deba74bb0f994044954bd74ff3}{set\-Default} (\$d)
+\begin{DoxyCompactList}\small\item\em Set default for class value. \end{DoxyCompactList}\item 
+\hyperlink{class_date_list_a14814e04b348120748912692645f3a75}{get\-Contents} ()
+\begin{DoxyCompactList}\small\item\em Get the value of the field as html format. Used by form. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_date_list_a85460a970770dab21ad47a84ae0954fd}{\hyperlink{class_date_list_a85460a970770dab21ad47a84ae0954fd}{format\-D\-List} (\$nm)}\label{class_date_list_a85460a970770dab21ad47a84ae0954fd}
+
+\begin{DoxyCompactList}\small\item\em Private function to format and set up the three individual drop lists. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+A special drop list for dates to be used in \hyperlink{class_form}{Form}. 
+
+Class manages three drop lists\-: month, date, and year. The class acts accordingly and reacts like a single field. 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{class_date_list_ac610fc08cbb0781b26136636de129bc0}{\index{Date\-List@{Date\-List}!\-\_\-\-\_\-construct@{\-\_\-\-\_\-construct}}
+\index{\-\_\-\-\_\-construct@{\-\_\-\-\_\-construct}!DateList@{Date\-List}}
+\subsubsection[{\-\_\-\-\_\-construct}]{\setlength{\rightskip}{0pt plus 5cm}\-\_\-\-\_\-construct (
+\begin{DoxyParamCaption}
+\item[{}]{\$nm}
+\end{DoxyParamCaption}
+)}}\label{class_date_list_ac610fc08cbb0781b26136636de129bc0}
+
+
+Constructor for class. 
+
+Requires unique name to be used in field, html name attribute, and Forms. 
+
+\subsection{Member Function Documentation}
+\hypertarget{class_date_list_a14814e04b348120748912692645f3a75}{\index{Date\-List@{Date\-List}!get\-Contents@{get\-Contents}}
+\index{get\-Contents@{get\-Contents}!DateList@{Date\-List}}
+\subsubsection[{get\-Contents}]{\setlength{\rightskip}{0pt plus 5cm}get\-Contents (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_date_list_a14814e04b348120748912692645f3a75}
+
+
+Get the value of the field as html format. Used by form. 
+
+Default html names for the three drop lists are \$this-\/$>$name.'month' \$this-\/$>$name.'day' and \$this-\/$>$name.'year'. \hypertarget{class_date_list_aaf2bb7deba74bb0f994044954bd74ff3}{\index{Date\-List@{Date\-List}!set\-Default@{set\-Default}}
+\index{set\-Default@{set\-Default}!DateList@{Date\-List}}
+\subsubsection[{set\-Default}]{\setlength{\rightskip}{0pt plus 5cm}set\-Default (
+\begin{DoxyParamCaption}
+\item[{}]{\$d}
+\end{DoxyParamCaption}
+)}}\label{class_date_list_aaf2bb7deba74bb0f994044954bd74ff3}
+
+
+Set default for class value. 
+
+Default must be in format of 'm/d/\-Y' with month and day being two digits. Year being four. Slashes can also be '-\/' as they will be replaced automatically into '/'. 
+
+The documentation for this class was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+Form.\-php\end{DoxyCompactItemize}

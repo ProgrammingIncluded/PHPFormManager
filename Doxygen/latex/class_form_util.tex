@@ -1,0 +1,50 @@
+\hypertarget{class_form_util}{\section{Form\-Util Class Reference}
+\label{class_form_util}\index{Form\-Util@{Form\-Util}}
+}
+
+
+A static helper class for \hyperlink{class_form}{Form} related functions.  
+
+
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \hyperlink{class_form_util_af02d029c44caef3ef026099eb6096646}{retrieve\-Using\-Form\-Values} (\$form)
+\begin{DoxyCompactList}\small\item\em Retrieve values for \hyperlink{class_form}{Form} based on the names of the fields and their values. \end{DoxyCompactList}\item 
+static \hyperlink{class_form_util_ac7c187cc47890d73a4d33ab38400f3e9}{submit\-Using\-Form\-Values} (\$form)
+\begin{DoxyCompactList}\small\item\em Submit a form based on the names of the fields and their values. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+A static helper class for \hyperlink{class_form}{Form} related functions. 
+
+Supports retrieval of data based on forms. Used by \hyperlink{class_form_manager}{Form\-Manager} to manage the forms. Currently uses database library. 
+
+\subsection{Member Function Documentation}
+\hypertarget{class_form_util_af02d029c44caef3ef026099eb6096646}{\index{Form\-Util@{Form\-Util}!retrieve\-Using\-Form\-Values@{retrieve\-Using\-Form\-Values}}
+\index{retrieve\-Using\-Form\-Values@{retrieve\-Using\-Form\-Values}!FormUtil@{Form\-Util}}
+\subsubsection[{retrieve\-Using\-Form\-Values}]{\setlength{\rightskip}{0pt plus 5cm}static retrieve\-Using\-Form\-Values (
+\begin{DoxyParamCaption}
+\item[{}]{\$form}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{class_form_util_af02d029c44caef3ef026099eb6096646}
+
+
+Retrieve values for \hyperlink{class_form}{Form} based on the names of the fields and their values. 
+
+Uses S\-Q\-L information set in \hyperlink{class_form}{Form}. Must have valid Database, datauser, table, id, and idvalue set for this function to work properly. \hypertarget{class_form_util_ac7c187cc47890d73a4d33ab38400f3e9}{\index{Form\-Util@{Form\-Util}!submit\-Using\-Form\-Values@{submit\-Using\-Form\-Values}}
+\index{submit\-Using\-Form\-Values@{submit\-Using\-Form\-Values}!FormUtil@{Form\-Util}}
+\subsubsection[{submit\-Using\-Form\-Values}]{\setlength{\rightskip}{0pt plus 5cm}static submit\-Using\-Form\-Values (
+\begin{DoxyParamCaption}
+\item[{}]{\$form}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{class_form_util_ac7c187cc47890d73a4d33ab38400f3e9}
+
+
+Submit a form based on the names of the fields and their values. 
+
+Uses S\-Q\-L information set in \hyperlink{class_form}{Form}. Must have valid Database, datauser, table, id, and idvalue set for this function to work properly. 
+
+The documentation for this class was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+Form\-Util.\-php\end{DoxyCompactItemize}

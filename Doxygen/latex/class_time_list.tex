@@ -1,0 +1,88 @@
+\hypertarget{class_time_list}{\section{Time\-List Class Reference}
+\label{class_time_list}\index{Time\-List@{Time\-List}}
+}
+
+
+A special drop list for time to be used in \hyperlink{class_form}{Form}.  
+
+
+Inheritance diagram for Time\-List\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_time_list}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_time_list_ac610fc08cbb0781b26136636de129bc0}{\-\_\-\-\_\-construct} (\$nm)
+\begin{DoxyCompactList}\small\item\em Constructor for class. \end{DoxyCompactList}\item 
+\hypertarget{class_time_list_a421831a265621325e1fdd19aace0c758}{\hyperlink{class_time_list_a421831a265621325e1fdd19aace0c758}{\-\_\-\-\_\-destruct} ()}\label{class_time_list_a421831a265621325e1fdd19aace0c758}
+
+\begin{DoxyCompactList}\small\item\em Default de-\/constructor for class. \end{DoxyCompactList}\item 
+\hyperlink{class_time_list_aaf2bb7deba74bb0f994044954bd74ff3}{set\-Default} (\$d)
+\begin{DoxyCompactList}\small\item\em Set default of \hyperlink{class_time_list}{Time\-List}. \end{DoxyCompactList}\item 
+\hyperlink{class_time_list_a14814e04b348120748912692645f3a75}{get\-Contents} ()
+\begin{DoxyCompactList}\small\item\em Get the value of the field as html format. Used by form. \end{DoxyCompactList}\item 
+\hypertarget{class_time_list_a6f75ffe7d98c9e375394d63f8d379b2d}{{\bfseries set\-Class} (\$nm)}\label{class_time_list_a6f75ffe7d98c9e375394d63f8d379b2d}
+
+\item 
+\hypertarget{class_time_list_a4e25c00802ca9e9afb52a9177014fea7}{{\bfseries set\-Div\-Class} (\$nm)}\label{class_time_list_a4e25c00802ca9e9afb52a9177014fea7}
+
+\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_time_list_adb57b56db9f1cbbe4e72ed05e2d5bd8a}{{\bfseries format\-List} (\$nm)}\label{class_time_list_adb57b56db9f1cbbe4e72ed05e2d5bd8a}
+
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+A special drop list for time to be used in \hyperlink{class_form}{Form}. 
+
+Supports up to an hour of time. If more, normal lists should be used. This was used for special cases where formatting of time is of an issue. Much like \hyperlink{class_date_list}{Date\-List} where multiple \hyperlink{class_drop_list}{Drop\-List} are created and managed. 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{class_time_list_ac610fc08cbb0781b26136636de129bc0}{\index{Time\-List@{Time\-List}!\-\_\-\-\_\-construct@{\-\_\-\-\_\-construct}}
+\index{\-\_\-\-\_\-construct@{\-\_\-\-\_\-construct}!TimeList@{Time\-List}}
+\subsubsection[{\-\_\-\-\_\-construct}]{\setlength{\rightskip}{0pt plus 5cm}\-\_\-\-\_\-construct (
+\begin{DoxyParamCaption}
+\item[{}]{\$nm}
+\end{DoxyParamCaption}
+)}}\label{class_time_list_ac610fc08cbb0781b26136636de129bc0}
+
+
+Constructor for class. 
+
+Requires unique name to be used in field, html name attribute, and Forms. 
+
+\subsection{Member Function Documentation}
+\hypertarget{class_time_list_a14814e04b348120748912692645f3a75}{\index{Time\-List@{Time\-List}!get\-Contents@{get\-Contents}}
+\index{get\-Contents@{get\-Contents}!TimeList@{Time\-List}}
+\subsubsection[{get\-Contents}]{\setlength{\rightskip}{0pt plus 5cm}get\-Contents (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_time_list_a14814e04b348120748912692645f3a75}
+
+
+Get the value of the field as html format. Used by form. 
+
+Individual \hyperlink{class_drop_list}{Drop\-List} html names are\-: \$this-\/$>$name.'sec' and \$this-\/$>$name.'min'. \hypertarget{class_time_list_aaf2bb7deba74bb0f994044954bd74ff3}{\index{Time\-List@{Time\-List}!set\-Default@{set\-Default}}
+\index{set\-Default@{set\-Default}!TimeList@{Time\-List}}
+\subsubsection[{set\-Default}]{\setlength{\rightskip}{0pt plus 5cm}set\-Default (
+\begin{DoxyParamCaption}
+\item[{}]{\$d}
+\end{DoxyParamCaption}
+)}}\label{class_time_list_aaf2bb7deba74bb0f994044954bd74ff3}
+
+
+Set default of \hyperlink{class_time_list}{Time\-List}. 
+
+Must be formatted as '00m 00s' with a space. 
+
+The documentation for this class was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+Form.\-php\end{DoxyCompactItemize}
