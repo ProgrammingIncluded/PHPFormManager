@@ -293,8 +293,7 @@ class Form{
          $display .= $v->getContents();
       }
       
-      $display .= '
-                 <input type="submit" name="'.$this->buttonName.'" value="'.$this->buttonValue.'" class="button" />
+      $display .= '<input type="submit" name="'.$this->buttonName.'" value="'.$this->buttonValue.'" class="button" />
                  </form>';
       return $display;
    }
@@ -1170,6 +1169,7 @@ class CountryList extends DropList{
       $this->hasBreak= true;
       $this->hasDiv = true;
    
+     // United States at Top as it is usually first used.
      $this->addOption("United States","United States");
      $this->addOption("Afghanistan","Afghanistan");
      $this->addOption("Åland Islands","Åland Islands");
